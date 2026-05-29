@@ -144,16 +144,28 @@ text-align: center;
 padding: 10px 0;
 }
 .hero-banner {
-width: 100%;
-height: 78vh;
-min-height: 560px;
-overflow: hidden;
+  width: 100%;
+  height: 78vh;
+  min-height: 560px;
+  overflow: hidden;
 }
-.hero-banner img {
-width: 100%;
-height: 100%;
-display: block;
-object-fit: cover;
+@media (max-width: 1023px) {
+  .hero-banner {
+    height: 65vh;
+    min-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-banner {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+@media (max-width: 479px) {
+  .hero-banner {
+    height: 40vh;
+    min-height: 250px;
+  }
 }
 .why-glowzy {
 max-width: 1150px;
