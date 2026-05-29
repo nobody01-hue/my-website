@@ -145,15 +145,16 @@ padding: 10px 0;
 }
 .hero-banner {
 width: 100%;
-height: 78vh;
-min-height: 560px;
+height: clamp(220px, 78vh, 850px);
 overflow: hidden;
+position: relative;
 }
 .hero-banner img {
 width: 100%;
 height: 100%;
 display: block;
 object-fit: cover;
+object-position: center;
 }
 .why-glowzy {
 max-width: 1150px;
