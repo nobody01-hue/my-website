@@ -605,8 +605,8 @@ text-decoration: none;
 }
 .page-view { display: none; }
 .page-view.active { display: block; }
-.cart-link { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #d8c8f2; background: #fff; color: var(--purple-900); text-decoration: none; font-size: 18px; }
-.cart-count { position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; background: var(--purple-600); color: #fff; font-size: 10px; display: none; align-items: center; justify-content: center; }
+.cart-link { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #d8c8f2; background: #fff; color: #7a5ec0; }
+.cart-count { position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; background: var(--purple-600); color: #fff; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 600; }
 .page-section-inner { max-width: 1150px; margin: 0 auto; padding: 56px 20px 70px; }
 .page-hero { text-align: center; padding: 48px 20px 24px; }
 .page-hero h1 { margin: 0; font-size: 44px; color: #9370DB; font-family: Garamond, Cormorant, sans-serif; }
@@ -630,7 +630,7 @@ text-decoration: none;
 .about-showcase-item a:hover img { transform: scale(1.03); }
 .about-showcase-item h3 { margin: 0 0 6px; font-size: 18px; color: #9370DB; font-family: Poppins, Cormorant, sans-serif; }
 .about-showcase-item p { margin: 0; font-size: 13px; line-height: 1.6; color: #6b5f82; }
-.about-story-block { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; margin-bottom: 32px; padding: 36px; border-radius: 24px; background: linear-gradient(135deg, #f9f4ff 0%, #ffffff 100%); border: 1px solid #e8dcf8; }
+.about-story-block { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; margin-bottom: 32px; padding: 36px; border-radius: 24px; background: linear-gradient(135deg, #f7f1ff, #fff); border: 1px solid #dfcff8; box-shadow: 0 12px 34px rgba(114, 78, 185, 0.1); }
 .about-story-block.reverse { direction: rtl; }
 .about-story-block.reverse .about-story-copy { direction: ltr; }
 .about-story-media { border-radius: 18px; overflow: hidden; box-shadow: 0 16px 34px rgba(114, 78, 185, 0.16); }
@@ -648,7 +648,7 @@ text-decoration: none;
 .about-cta-band .primary-btn { background: #fff; color: #5a3f90; box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
 .cta-wrap { text-align: center; }
 .contact-page { padding-top: 12px; }
-.contact-hero-band { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; margin-bottom: 36px; min-height: 320px; border-radius: 24px; overflow: hidden; background: linear-gradient(135deg, #f3ebff 0%, #faf7ff 100%); border: 1px solid #e0cff8; }
+.contact-hero-band { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; margin-bottom: 36px; min-height: 320px; border-radius: 24px; overflow: hidden; background: linear-gradient(135deg, #f7f1ff, #fff); border: 1px solid #dfcff8; }
 .contact-hero-copy { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
 .contact-hero-copy h1 { margin: 0 0 12px; font-size: 44px; line-height: 1.05; color: var(--purple-900); font-family: Garamond, Poppins, sans-serif; }
 .contact-hero-copy p { margin: 0; font-size: 16px; line-height: 1.75; color: #6b5f82; max-width: 420px; }
@@ -658,7 +658,7 @@ text-decoration: none;
 .contact-details-stack { display: grid; gap: 14px; }
 .contact-detail-card { display: flex; gap: 14px; align-items: flex-start; padding: 20px; border-radius: 16px; background: #fff; border: 1px solid #e5d7f8; box-shadow: 0 8px 22px rgba(123, 88, 194, 0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .contact-detail-card:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(123, 88, 194, 0.14); }
-.contact-detail-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #efe3ff, #e0cff8); color: #7a5ec0; font-size: 18px; }
+.contact-detail-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #efe3ff, #e0d4ff); }
 .contact-detail-card h4 { margin: 0 0 4px; font-size: 13px; letter-spacing: 0.8px; text-transform: uppercase; color: #7a5ec0; }
 .contact-detail-card p { margin: 0; font-size: 14px; line-height: 1.55; color: #4a3d62; }
 .contact-detail-card a { color: #7a5ec0; text-decoration: none; }
@@ -669,9 +669,9 @@ text-decoration: none;
 .contact-form-panel .form-group input:focus, .contact-form-panel .form-group textarea:focus { outline: none; border-color: #9370DB; box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.15); }
 .contact-side-image { border-radius: 18px; overflow: hidden; margin-bottom: 14px; box-shadow: 0 12px 28px rgba(114, 78, 185, 0.14); }
 .contact-side-image img { width: 100%; height: 200px; object-fit: cover; display: block; }
-.primary-btn { display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #9370DB, #7d59c5); color: #fff; text-decoration: none; border-radius: 999px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; border: none; cursor: pointer; font-family: Poppins; }
+.primary-btn { display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #9370DB, #7d59c5); color: #fff; text-decoration: none; border-radius: 999px; font-size: 12px; text-transform: uppercase; }
 .category-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
-.category-tab { padding: 8px 18px; border: 1px solid #d8c8f2; border-radius: 999px; background: #fff; color: #6b5f82; font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; cursor: pointer; font-family: inherit; transition: all 0.2s ease; }
+.category-tab { padding: 8px 18px; border: 1px solid #d8c8f2; border-radius: 999px; background: #fff; color: #6b5f82; font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; cursor: pointer; }
 .category-tab.active, .category-tab:hover { background: #9370DB; color: #fff; border-color: #9370DB; }
 .products-page-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .products-page-grid .product-card { flex: none; }
@@ -695,7 +695,7 @@ text-decoration: none;
 .cart-summary h3 { margin: 0 0 16px; color: #9370DB; }
 .summary-line { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #6b5f82; }
 .summary-total { font-size: 18px; font-weight: 700; color: #7a4fd1; border-top: 1px solid #ecddff; padding-top: 12px; margin-top: 12px; }
-.checkout-btn { display: inline-block; width: 100%; text-align: center; margin-top: 16px; padding: 12px 18px; background: linear-gradient(135deg, #9370DB, #7d59c5); color: #fff; border: none; border-radius: 999px; font-size: 12px; letter-spacing: 0.9px; text-transform: uppercase; cursor: pointer; font-family: Poppins; }
+.checkout-btn { display: inline-block; width: 100%; text-align: center; margin-top: 16px; padding: 12px 18px; background: linear-gradient(135deg, #9370DB, #7d59c5); color: #fff; border: none; border-radius: 999px; }
 .checkout-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: start; }
 .checkout-form-card, .order-review-card { background: linear-gradient(135deg, #f7f1ff, #fff); border: 1px solid #dfcff8; border-radius: 20px; padding: 28px; }
 .checkout-form-card h3, .order-review-card h3 { margin: 0 0 18px; color: #9370DB; }
@@ -705,7 +705,7 @@ text-decoration: none;
 .cod-box { margin-top: 16px; padding: 16px; border-radius: 14px; border: 1px solid #d8c8f2; background: #fff; }
 .cod-box label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
 .cod-box p { margin: 8px 0 0 28px; font-size: 13px; line-height: 1.6; color: #6b5f82; }
-.success-card { max-width: 640px; margin: 0 auto; text-align: center; padding: 48px 28px; background: linear-gradient(135deg, #f7f1ff, #fff); border: 1px solid #dfcff8; border-radius: 24px; box-shadow: 0 16px 34px rgba(114,78,185,0.12); }
+.success-card { max-width: 640px; margin: 0 auto; text-align: center; padding: 48px 28px; background: linear-gradient(135deg, #f7f1ff, #fff); border: 1px solid #dfcff8; border-radius: 24px; box-shadow: 0 16px 36px rgba(114, 78, 185, 0.1); }
 .success-card h2 { margin: 0 0 12px; font-size: 38px; color: #9370DB; font-family: Garamond, Poppins, sans-serif; }
 .success-card p { margin: 0 0 8px; color: #6b5f82; line-height: 1.7; }
 .success-icon { font-size: 48px; margin-bottom: 16px; }
@@ -717,7 +717,7 @@ text-decoration: none;
 .modal-actions button { flex: 1; padding: 11px; border-radius: 999px; border: none; cursor: pointer; font-family: Poppins; text-transform: uppercase; font-size: 11px; }
 .btn-cancel { background: #efe6fd; color: #6b5f82; }
 .btn-confirm { background: linear-gradient(135deg, #9370DB, #7d59c5); color: #fff; }
-.cart-toast { position: fixed; bottom: 24px; right: 24px; padding: 12px 18px; border-radius: 999px; background: var(--purple-900); color: #fff; font-size: 13px; opacity: 0; transform: translateY(10px); transition: opacity 0.25s, transform 0.25s; z-index: 300; pointer-events: none; }
+.cart-toast { position: fixed; bottom: 24px; right: 24px; padding: 12px 18px; border-radius: 999px; background: var(--purple-900); color: #fff; font-size: 13px; opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease; }
 .cart-toast.show { opacity: 1; transform: translateY(0); }
 .main-nav a.nav-active { color: var(--purple-900); background: #f1eafe; }
 .add-to-cart-btn { border: none; cursor: pointer; font-family: Poppins; }
@@ -822,7 +822,7 @@ grid-template-columns: 1fr;
 </div>
 <div class="header-main">
 <a href="#home" class="brand-link" data-route="home" title="Glowzy — Home">
-<img src="images/logo.jpg" alt="logo.jpg" class="brand-logo">
+<img src="/my-website/images/logo.jpg" alt="logo.jpg" class="brand-logo">
 <h1 class="brand-title">Glowzy</h1>
 </a>
 <nav class="main-nav" aria-label="Main Navigation">
@@ -872,7 +872,7 @@ grid-template-columns: 1fr;
 
 
 <section class="sale">
-    <img src="images/sale.jpg" alt="sale">
+    <img src="/my-website/images/sale.jpg" alt="sale">
     <div class="sale-text">
         <span class="sale-tag">Limited Offer</span>
         <h2>Glowzy Sale Event</h2>
@@ -892,7 +892,7 @@ grid-template-columns: 1fr;
 <div class="product-slider-window">
 <div class="product-track">
 <article class="product-card">
-<img src="images/product2.jpeg" alt="product2">
+<img src="/my-website/images/product2.jpeg" alt="product2">
 <div class="product-info">
 <h3 class="product-name">Gentle Radiance Cleanser</h3>
 <p class="product-price"><span class="old-price">₱1,299.00</span><span class="sale-price">₱899.00</span></p>
@@ -900,7 +900,7 @@ grid-template-columns: 1fr;
 </div>
 </article>
 <article class="product-card">
-<img src="images/product4.jpeg" alt="product4">
+<img src="/my-website/images/product4.jpeg" alt="product4">
 <div class="product-info">
 <h3 class="product-name">Daily Renewal Moisturizer</h3>
 <p class="product-price"><span class="old-price">₱1,099.00</span><span class="sale-price">₱849.00</span></p>
@@ -908,7 +908,7 @@ grid-template-columns: 1fr;
 </div>
 </article>
 <article class="product-card">
-<img src="images/product6.jpeg" alt="product6">
+<img src="/my-website/images/product6.jpeg" alt="product6">
 <div class="product-info">
 <h3 class="product-name">Brightening Glow Serum</h3>
 <p class="product-price"><span class="old-price">₱999.00</span><span class="sale-price">₱749.00</span></p>
@@ -916,7 +916,7 @@ grid-template-columns: 1fr;
 </div>
 </article>
 <article class="product-card">
-<img src="images/product7.jpeg" alt="product7">
+<img src="/my-website/images/product7.jpeg" alt="product7">
 <div class="product-info">
 <h3 class="product-name">Velvet Nude Lipstick</h3>
 <p class="product-price"><span class="old-price">₱1,199.00</span><span class="sale-price">₱899.00</span></p>
@@ -924,7 +924,7 @@ grid-template-columns: 1fr;
 </div>
 </article>
 <article class="product-card">
-<img src="images/product3.jpeg" alt="product3">
+<img src="/my-website/images/product3.jpeg" alt="product3">
 <div class="product-info">
 <h3 class="product-name">Radiance Boost Cream</h3>
 <p class="product-price">₱1,099.00</p>
@@ -932,7 +932,7 @@ grid-template-columns: 1fr;
 </div>
 </article>
 <article class="product-card">
-<img src="images/product5.jpeg" alt="procduct5">
+<img src="/my-website/images/product5.jpeg" alt="procduct5">
 <div class="product-info">
 <h3 class="product-name">Radiant Bloom Eau De Parfum</h3>
 <p class="product-price">₱899.00</p>
@@ -947,7 +947,7 @@ grid-template-columns: 1fr;
 
 
 <article class="feature-block">
-<img src="images/model1.jpeg" alt="model1">
+<img src="/my-website/images/model1.jpeg" alt="model1">
 <div class="feature-text">
 <h3>Nourish Naturally</h3>
 <p>Elevate your routine with formulas crafted to replenish and restore. Lightweight textures and deep hydration work together for a radiant everyday glow.</p>
@@ -957,7 +957,7 @@ grid-template-columns: 1fr;
 
 
 <article class="feature-block reverse">
-<img src="images/model2.jpeg" alt="model2">
+<img src="/my-website/images/model2.jpeg" alt="model2">
 <div class="feature-text">
 <h3>Nature's Defense Shield</h3>
 <p>Protect your skin from daily stress with antioxidant-rich care. Each application supports resilience while keeping your complexion smooth and luminous.</p>
@@ -967,7 +967,7 @@ grid-template-columns: 1fr;
 
 
 <article class="feature-block">
-    <img src="images/model3.jpeg" alt="model3">
+    <img src="/my-website/images/model3.jpeg" alt="model3">
     <div class="feature-text">
     <h3>Nourish Naturally</h3>
     <p>Elevate your routine with formulas crafted to replenish and restore. Lightweight textures and deep hydration work together for a radiant everyday glow.</p>
@@ -990,656 +990,11 @@ grid-template-columns: 1fr;
 <a href="#products" class="primary-btn" data-route="products">Shop the Collection</a>
 </div>
 <div class="about-intro-visual">
-<img src="images/model1.jpeg" alt="model1">
+<img src="/my-website/images/model1.jpeg" alt="model1">
 <span class="about-intro-caption">Natural glow, everyday confidence</span>
 </div>
 </div>
-
-
-<div class="about-showcase">
-<p class="about-showcase-label">The Glowzy Experience</p>
-<div class="about-showcase-grid">
-<article class="about-showcase-item">
-<a href="#products" data-route="products" data-category-link="skincare">
-<div class="about-showcase-image">
-<img src="images/about-us-skincare.jpeg" alt="about-us-skincare">
-</div>
-<h3>Skincare</h3>
-<p>Daily rituals for healthy, glowing skin.</p>
-</a>
-</article>
-<article class="about-showcase-item">
-<a href="#products" data-route="products" data-category-link="cosmetics">
-<div class="about-showcase-image">
-<img src="images/about-us-cosmetics.jpeg" alt="about-us-cosmetics">
-</div>
-<h3>Cosmetics</h3>
-<p>Enhance your natural beauty with ease.</p>
-</a>
-</article>
-<article class="about-showcase-item">
-<a href="#products" data-route="products" data-category-link="fragrance">
-<div class="about-showcase-image">
-<img src="images/about-us-fragrance.jpeg" alt="about-us-fragrance">
-</div>
-<h3>Fragrance</h3>
-<p>Soft, lasting scents for every day.</p>
-</a>
-</article>
-</div>
-</div>
-
-
-<article class="about-story-block">
-<div class="about-story-media">
-<img src="images/model2.jpeg" alt="model2">
-</div>
-<div class="about-story-copy">
-<h2>Our Story</h2>
-<p>Since 2026, Glowzy has curated skincare, cosmetics, and fragrance that blend science-backed ingredients with an elegant, modern aesthetic.</p>
-<p>Every bottle and jar is designed to feel special in your routine — from morning cleanse to evening glow — so self-care never feels like a chore.</p>
-</div>
-</article>
-
-
-<article class="about-story-block reverse">
-<div class="about-story-media">
-<img src="images/model3.jpeg" alt="model3">
-</div>
-<div class="about-story-copy">
-<h2>Our Promise</h2>
-<p>We prioritize gentle, skin-safe formulations and transparent sourcing. No harsh shortcuts — only products we would use ourselves.</p>
-<p>Packaging, texture, and results work together so you feel the premium care in every application.</p>
-</div>
-</article>
-
-
-<div class="about-values-strip">
-<div class="about-value-item">
-<strong>Clean Beauty</strong>
-<p>Thoughtfully selected ingredients without harsh additives.</p>
-</div>
-<div class="about-value-item">
-<strong>Visible Results</strong>
-<p>Formulas designed for daily use and lasting radiance.</p>
-</div>
-<div class="about-value-item">
-<strong>Customer First</strong>
-<p>Fast delivery and friendly support at every step.</p>
-</div>
-</div>
-
-
-<div class="about-cta-band">
-<h3>Ready to find your glow?</h3>
-<p>Explore skincare, cosmetics, and fragrance — all in one place.</p>
-<a href="#products" class="primary-btn" data-route="products">View All Products</a>
-</div>
 </main>
 </section>
-
-
-<section id="view-products" class="page-view">
-<main class="page-section-inner">
-<div class="page-hero">
-<h1>All Products</h1>
-<p>Explore our full collection — skincare, cosmetics, and fragrance — curated for healthy, luminous beauty.</p>
-</div>
-<div class="category-tabs" role="tablist" aria-label="Product categories">
-<button type="button" class="category-tab active" data-category="all">All</button>
-<button type="button" class="category-tab" data-category="skincare">Skincare</button>
-<button type="button" class="category-tab" data-category="cosmetics">Cosmetics</button>
-<button type="button" class="category-tab" data-category="fragrance">Fragrance</button>
-</div>
-<div class="products-page-grid" id="products-page-grid"></div>
-</main>
-</section>
-
-
-<section id="view-contact" class="page-view">
-<main class="page-section-inner contact-page">
-<div class="contact-hero-band">
-<div class="contact-hero-copy">
-<span class="about-eyebrow">We're here for you</span>
-<h1>Let's stay in touch</h1>
-<p>Questions about your order, product recommendations, or partnerships? Our team is happy to help you glow with confidence.</p>
-</div>
-<div class="contact-hero-image">
-<img src="images/logo.jpg" alt="logo">
-</div>
-</div>
-
-
-<div class="contact-layout">
-<aside class="contact-details-stack">
-<div class="contact-side-image">
-<img src="images/contact mail.png" alt="contact mail">
-</div>
-<div class="contact-detail-card">
-<span class="contact-detail-icon" aria-hidden="true">&#9993;</span>
-<div>
-<h4>Email</h4>
-<p><a href="mailto:hello@glowzy.com">hello@glowzy.com</a></p>
-</div>
-</div>
-<div class="contact-detail-card">
-<span class="contact-detail-icon" aria-hidden="true">&#128222;</span>
-<div>
-<h4>Phone</h4>
-<p><a href="tel:+639123456789">+63 912 345 6789</a></p>
-</div>
-</div>
-<div class="contact-detail-card">
-<span class="contact-detail-icon" aria-hidden="true">&#128337;</span>
-<div>
-<h4>Hours</h4>
-<p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-</div>
-</div>
-<div class="contact-detail-card">
-<span class="contact-detail-icon" aria-hidden="true">&#128205;</span>
-<div>
-<h4>Location</h4>
-<p>Manila, Philippines</p>
-</div>
-</div>
-</aside>
-
-
-<form class="contact-form-panel" id="contact-form">
-<h3>Send a Message</h3>
-<p class="form-note">Fill out the form below and we'll respond within 1–2 business days.</p>
-<div class="form-group"><label for="contact-name">Full Name</label><input type="text" id="contact-name" name="name" required placeholder="Your name"></div>
-<div class="form-group"><label for="contact-email">Email Address</label><input type="email" id="contact-email" name="email" required placeholder="you@email.com"></div>
-<div class="form-group"><label for="contact-subject">Subject</label><input type="text" id="contact-subject" name="subject" placeholder="Order inquiry, product question…"></div>
-<div class="form-group"><label for="contact-message">Message</label><textarea id="contact-message" name="message" required placeholder="How can we help you?"></textarea></div>
-<button type="submit" class="primary-btn">Send Message</button>
-</form>
-</div>
-</main>
-</section>
-
-
-<section id="view-cart" class="page-view">
-<main class="page-section-inner">
-<div class="page-hero"><h1>Your Cart</h1><p>Review your selections before checkout.</p></div>
-<div id="cart-empty" class="empty-state" style="display:none;">
-<p>Your cart is empty.</p>
-<a href="#products" class="primary-btn" data-route="products" style="max-width:220px;margin:16px auto 0;display:block;">Browse Products</a>
-</div>
-<div id="cart-content">
-<div class="cart-layout">
-<div class="cart-items-wrap" id="cart-items"></div>
-<div class="cart-summary">
-<h3>Order Summary</h3>
-<div class="summary-line"><span>Subtotal</span><span id="cart-subtotal">₱0.00</span></div>
-<div class="summary-line summary-total"><span>Total</span><span id="cart-total">₱0.00</span></div>
-<button type="button" class="checkout-btn" id="go-checkout-btn">Proceed to Checkout</button>
-</div>
-</div>
-</div>
-</main>
-</section>
-
-
-<section id="view-checkout" class="page-view">
-<main class="page-section-inner">
-<div class="page-hero"><h1>Checkout</h1><p>Complete your order with secure Cash on Delivery.</p></div>
-<div class="checkout-grid">
-<form class="checkout-form-card" id="checkout-form" novalidate>
-<h3>Shipping Address</h3>
-<div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" required><p class="field-error" data-error-for="fullName"></p></div>
-<div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required><p class="field-error" data-error-for="phone"></p></div>
-<div class="form-group"><label for="address">Complete Address</label><input type="text" id="address" name="address" required><p class="field-error" data-error-for="address"></p></div>
-<div class="form-group"><label for="city">City</label><input type="text" id="city" name="city" required><p class="field-error" data-error-for="city"></p></div>
-<div class="form-group"><label for="province">Province</label><input type="text" id="province" name="province" required><p class="field-error" data-error-for="province"></p></div>
-<div class="form-group"><label for="zip">ZIP Code</label><input type="text" id="zip" name="zip" required><p class="field-error" data-error-for="zip"></p></div>
-<h3 style="margin-top:24px;">Payment Method</h3>
-<div class="cod-box">
-<label><input type="radio" name="payment" value="cod" checked> <strong>Cash on Delivery (COD)</strong></label>
-<p>Pay when your order arrives. Our courier will collect the total amount in cash. Please prepare exact change when possible.</p>
-</div>
-<button type="button" class="primary-btn" id="place-order-btn" style="margin-top:20px;">Place Order</button>
-</form>
-<div class="order-review-card">
-<h3>Order Review</h3>
-<div id="review-items"></div>
-<h3 style="margin-top:20px;font-size:16px;">Shipping To</h3>
-<div id="review-shipping"><p>Fill in your shipping details to preview.</p></div>
-<div class="summary-line summary-total" style="margin-top:16px;"><span>Total</span><span id="review-total">₱0.00</span></div>
-</div>
-</div>
-</main>
-</section>
-
-
-<section id="view-success" class="page-view">
-<main class="page-section-inner">
-<div class="success-card">
-<div class="success-icon" aria-hidden="true">&#10003;</div>
-<h2>Order Placed!</h2>
-<p id="success-message">Thank you for shopping with Glowzy.</p>
-<p id="success-order-id"></p>
-<p id="success-order-total"></p>
-<button type="button" class="primary-btn" id="continue-shopping-btn" style="max-width:240px;margin:20px auto 0;">Continue Shopping</button>
-</div>
-</main>
-</section>
-
-
-<footer class="site-footer">
-<div class="footer-main">
-<div class="footer-brand">
-<h3>Glowzy</h3>
-<p>Natural glow and everyday confidence through curated skincare and cosmetics made for modern routines.</p>
-</div>
-
-
-<div class="footer-col">
-<h4>Shop</h4>
-<ul class="footer-links">
-<li><a href="#products" data-route="products">All products</a></li>
-<li><a href="#products" data-route="products">Best sellers</a></li>
-<li><a href="#home" data-route="home">New arrivals</a></li>
-<li><a href="#products" data-route="products">Gift sets</a></li>
-</ul>
-</div>
-
-
-<div class="footer-col">
-<h4>Support</h4>
-<ul class="footer-links">
-<li><a href="#about" data-route="about">About us</a></li>
-<li><a href="#contact" data-route="contact">Contact</a></li>
-<li><a href="#">Shipping info</a></li>
-<li><a href="#">FAQs</a></li>
-</ul>
-</div>
-
-
-<div class="footer-col">
-<h4>Stay Updated</h4>
-<p>Get first access to product drops, beauty tips, and member-only offers.</p>
-<form class="newsletter-form" action="#" method="post">
-<input type="email" name="email" placeholder="Enter your email" aria-label="Email address">
-<button type="submit">Subscribe</button>
-</form>
-</div>
-</div>
-
-
-<div class="footer-bottom">
-<div class="footer-bottom-inner">
-<span>&copy; 2026 Glowzy. All rights reserved.</span>
-<div class="footer-legal">
-<a href="#">Privacy Policy</a>
-<a href="#">Terms</a>
-<a href="#">Returns</a>
-</div>
-</div>
-</div>
-</footer>
-
-
-<div class="modal-overlay" id="confirm-modal" aria-hidden="true">
-<div class="modal-card">
-<h3>Confirm Your Order</h3>
-<div id="modal-summary"></div>
-<div class="modal-actions">
-<button type="button" class="btn-cancel" id="cancel-order-btn">Cancel</button>
-<button type="button" class="btn-confirm" id="confirm-order-btn">Confirm Order</button>
-</div>
-</div>
-</div>
-
-
-<div id="cart-toast" class="cart-toast" aria-live="polite"></div>
-
-
-<script>
-(function () {
-var GLOWZY_PRODUCTS = [
-  { id: 'gentle-radiance-cleanser', name: 'Gentle Radiance Cleanser', price: 899, oldPrice: 1299, image: 'images/product2.jpeg', category: 'skincare' },
-  { id: 'daily-renewal-moisturizer', name: 'Daily Renewal Moisturizer', price: 849, oldPrice: 1099, image: 'images/product4.jpeg', category: 'skincare' },
-  { id: 'brightening-glow-serum', name: 'Brightening Glow Serum', price: 749, oldPrice: 999, image: 'images/product6.jpeg', category: 'skincare' },
-  { id: 'velvet-nude-lipstick', name: 'Velvet Nude Lipstick', price: 899, oldPrice: 1199, image: 'images/product7.jpeg', category: 'cosmetics' },
-  { id: 'compact-powder', name: 'Compact Powder', price: 1099, oldPrice: null, image: 'images/product8.jpeg', category: 'cosmetics' },
-  { id: 'volume-mascara', name: 'Mascara', price: 899, oldPrice: null, image: 'images/product9.jpeg', category: 'cosmetics' },
-  { id: 'oil-perfume', name: 'Velvet Iris Perfume Oil', price: 599, oldPrice: 799, image: 'images/product1.jpeg', category: 'fragrance' },
-  { id: 'radiant-bloom', name: 'Radiant Bloom Eau De Parfum', price: 899, oldPrice: 1149, image: 'images/product5.jpeg', category: 'fragrance' },
-  { id: 'body-mist', name: 'Lavander Vanilla Body Mist', price: 649, oldPrice: null, image: 'images/product3.jpeg', category: 'fragrance' },
-];
-var CART_KEY = 'glowzy_cart';
-var ORDERS_KEY = 'glowzy_orders';
-var lastOrder = null;
-var activeCategory = 'all';
-
-
-function formatPrice(n) { return '₱' + Number(n).toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
-function getCart() { try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch (e) { return []; } }
-function saveCart(c) { localStorage.setItem(CART_KEY, JSON.stringify(c)); }
-function getCartCount() { return getCart().reduce(function (t, i) { return t + i.quantity; }, 0); }
-function getCartSubtotal() { return getCart().reduce(function (t, i) { return t + i.price * i.quantity; }, 0); }
-
-
-function updateCartBadge() {
-  var badge = document.getElementById('cart-count');
-  if (!badge) return;
-  var count = getCartCount();
-  badge.textContent = count;
-  badge.style.display = count > 0 ? 'inline-flex' : 'none';
-}
-
-
-function showToast(msg) {
-  var toast = document.getElementById('cart-toast');
-  if (!toast) return;
-  toast.textContent = msg;
-  toast.classList.add('show');
-  setTimeout(function () { toast.classList.remove('show'); }, 2200);
-}
-
-
-function addToCart(productId) {
-  var product = GLOWZY_PRODUCTS.find(function (p) { return p.id === productId; });
-  if (!product) return false;
-  var cart = getCart();
-  var existing = cart.find(function (i) { return i.id === productId; });
-  if (existing) existing.quantity += 1;
-  else cart.push({ id: product.id, name: product.name, price: product.price, image: product.image, quantity: 1 });
-  saveCart(cart);
-  updateCartBadge();
-  return true;
-}
-
-
-function renderProductPrice(p) {
-  if (p.oldPrice) return '<p class="product-price"><span class="old-price">' + formatPrice(p.oldPrice) + '</span><span class="sale-price">' + formatPrice(p.price) + '</span></p>';
-  return '<p class="product-price">' + formatPrice(p.price) + '</p>';
-}
-
-
-function renderProductCard(p) {
-  return '<article class="product-card"><img src="' + p.image + '" alt="' + p.name + '"><div class="product-info"><h3 class="product-name">' + p.name + '</h3>' + renderProductPrice(p) + '<button type="button" class="buy-now-btn add-to-cart-btn" data-product-id="' + p.id + '">Add to Cart</button></div></article>';
-}
-
-
-function renderProductsPage() {
-  var grid = document.getElementById('products-page-grid');
-  if (!grid) return;
-  var list = activeCategory === 'all' ? GLOWZY_PRODUCTS : GLOWZY_PRODUCTS.filter(function (p) { return p.category === activeCategory; });
-  grid.innerHTML = list.length ? list.map(renderProductCard).join('') : '<p class="empty-state">No products in this category yet.</p>';
-  bindAddToCartButtons(grid);
-}
-
-
-function bindAddToCartButtons(root) {
-  (root || document).querySelectorAll('.add-to-cart-btn').forEach(function (btn) {
-    if (btn.dataset.bound) return;
-    btn.dataset.bound = '1';
-    btn.addEventListener('click', function () {
-      if (addToCart(btn.getAttribute('data-product-id'))) showToast('Added to cart');
-    });
-  });
-}
-
-
-function setActiveNav(route) {
-  document.querySelectorAll('.main-nav a[data-route]').forEach(function (link) {
-    link.classList.toggle('nav-active', link.getAttribute('data-route') === route);
-  });
-}
-
-
-function showView(route) {
-  var map = { home: 'view-home', about: 'view-about', products: 'view-products', contact: 'view-contact', cart: 'view-cart', checkout: 'view-checkout', success: 'view-success', 'order-success': 'view-success' };
-  var viewId = map[route] || 'view-home';
-  document.querySelectorAll('.page-view').forEach(function (v) { v.classList.remove('active'); });
-  var el = document.getElementById(viewId);
-  if (el) el.classList.add('active');
-  var navRoute = route === 'order-success' ? 'cart' : route;
-  if (['home', 'about', 'products', 'contact'].indexOf(navRoute) >= 0) setActiveNav(navRoute);
-  else setActiveNav('');
-  window.scrollTo(0, 0);
-  if (viewId === 'view-products') {
-    document.querySelectorAll('.category-tab').forEach(function (t) {
-      t.classList.toggle('active', t.getAttribute('data-category') === activeCategory);
-    });
-    renderProductsPage();
-  }
-  if (viewId === 'view-cart') renderCartPage();
-  if (viewId === 'view-checkout') renderCheckoutReview();
-  if (viewId === 'view-success' && lastOrder) renderOrderSuccess(lastOrder);
-}
-
-
-function handleRoute() {
-  var hash = (location.hash || '#home').replace('#', '') || 'home';
-  showView(hash);
-}
-
-
-function renderCartPage() {
-  var container = document.getElementById('cart-items');
-  if (!container) return;
-  var cart = getCart();
-  var emptyEl = document.getElementById('cart-empty');
-  var contentEl = document.getElementById('cart-content');
-  var subtotalEl = document.getElementById('cart-subtotal');
-  var totalEl = document.getElementById('cart-total');
-  if (!cart.length) {
-    container.innerHTML = '';
-    if (emptyEl) emptyEl.style.display = 'block';
-    if (contentEl) contentEl.style.display = 'none';
-    if (subtotalEl) subtotalEl.textContent = formatPrice(0);
-    if (totalEl) totalEl.textContent = formatPrice(0);
-    return;
-  }
-  if (emptyEl) emptyEl.style.display = 'none';
-  if (contentEl) contentEl.style.display = 'block';
-  container.innerHTML = cart.map(function (item) {
-    return '<article class="cart-row"><img class="cart-row-image" src="' + item.image + '" alt=""><div class="cart-row-details"><h3>' + item.name + '</h3><p class="cart-row-price">' + formatPrice(item.price) + '</p><div class="qty-controls"><button type="button" class="qty-btn" data-action="decrease" data-id="' + item.id + '">-</button><span class="qty-value">' + item.quantity + '</span><button type="button" class="qty-btn" data-action="increase" data-id="' + item.id + '">+</button></div><button type="button" class="remove-item-btn" data-id="' + item.id + '">Remove</button></div><p class="cart-row-subtotal">' + formatPrice(item.price * item.quantity) + '</p></article>';
-  }).join('');
-  var subtotal = getCartSubtotal();
-  if (subtotalEl) subtotalEl.textContent = formatPrice(subtotal);
-  if (totalEl) totalEl.textContent = formatPrice(subtotal);
-  container.querySelectorAll('.qty-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var id = btn.getAttribute('data-id');
-      var cart = getCart();
-      var item = cart.find(function (i) { return i.id === id; });
-      if (!item) return;
-      item.quantity += btn.getAttribute('data-action') === 'increase' ? 1 : -1;
-      if (item.quantity <= 0) cart = cart.filter(function (i) { return i.id !== id; });
-      saveCart(cart); updateCartBadge(); renderCartPage();
-    });
-  });
-  container.querySelectorAll('.remove-item-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      saveCart(getCart().filter(function (i) { return i.id !== btn.getAttribute('data-id'); }));
-      updateCartBadge(); renderCartPage();
-    });
-  });
-}
-
-
-function validateCheckoutForm(form) {
-  var fields = ['fullName', 'phone', 'address', 'city', 'province', 'zip'];
-  var valid = true;
-  fields.forEach(function (name) {
-    var input = form.elements[name];
-    var err = form.querySelector('[data-error-for="' + name + '"]');
-    if (!input.value.trim()) { valid = false; input.classList.add('input-error'); if (err) err.textContent = 'This field is required.'; }
-    else { input.classList.remove('input-error'); if (err) err.textContent = ''; }
-  });
-  return valid;
-}
-
-
-function getFormData(form) {
-  return { fullName: form.elements.fullName.value.trim(), phone: form.elements.phone.value.trim(), address: form.elements.address.value.trim(), city: form.elements.city.value.trim(), province: form.elements.province.value.trim(), zip: form.elements.zip.value.trim() };
-}
-
-
-function renderCheckoutReview() {
-  var itemsEl = document.getElementById('review-items');
-  var shippingEl = document.getElementById('review-shipping');
-  var totalEl = document.getElementById('review-total');
-  if (!itemsEl) return;
-  var cart = getCart();
-  if (!cart.length) { itemsEl.innerHTML = '<p>Your cart is empty.</p>'; if (totalEl) totalEl.textContent = formatPrice(0); return; }
-  itemsEl.innerHTML = cart.map(function (i) { return '<div class="review-item"><span>' + i.name + ' x ' + i.quantity + '</span><span>' + formatPrice(i.price * i.quantity) + '</span></div>'; }).join('');
-  var form = document.getElementById('checkout-form');
-  if (form && shippingEl) {
-    var d = getFormData(form);
-    shippingEl.innerHTML = d.fullName ? '<p><strong>' + d.fullName + '</strong></p><p>' + d.phone + '</p><p>' + d.address + '</p><p>' + d.city + ', ' + d.province + ' ' + d.zip + '</p>' : '<p>Fill in your shipping details to preview.</p>';
-  }
-  if (totalEl) totalEl.textContent = formatPrice(getCartSubtotal());
-}
-
-
-function openConfirmModal(html) {
-  document.getElementById('modal-summary').innerHTML = html;
-  document.getElementById('confirm-modal').classList.add('open');
-}
-function closeConfirmModal() { document.getElementById('confirm-modal').classList.remove('open'); }
-
-
-function renderOrderSuccess(order) {
-  document.getElementById('success-order-id').textContent = 'Order ID: ' + order.id;
-  document.getElementById('success-order-total').textContent = 'Total paid on delivery: ' + formatPrice(order.total);
-}
-
-
-function initSlider() {
-  var slider = document.querySelector('.product-slider');
-  if (!slider) return;
-  var track = slider.querySelector('.product-track');
-  var cards = slider.querySelectorAll('.product-card');
-  var prevBtn = slider.querySelector('.slider-nav.prev');
-  var nextBtn = slider.querySelector('.slider-nav.next');
-  var dotsWrap = slider.querySelector('.slider-dots');
-  var currentPage = 0;
-  var cardsPerView = window.innerWidth <= 900 ? 1 : 3;
-  var totalPages = Math.max(1, Math.ceil(cards.length / cardsPerView));
-  function renderDots() {
-    dotsWrap.innerHTML = '';
-    for (var i = 0; i < totalPages; i++) {
-      var dot = document.createElement('button');
-      dot.type = 'button';
-      dot.className = 'slider-dot' + (i === currentPage ? ' active' : '');
-      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-      dot.dataset.index = i;
-      dotsWrap.appendChild(dot);
-    }
-  }
-  function updateSlider() {
-    cardsPerView = window.innerWidth <= 900 ? 1 : 3;
-    totalPages = Math.max(1, Math.ceil(cards.length / cardsPerView));
-    if (currentPage > totalPages - 1) currentPage = totalPages - 1;
-    var pageWidth = track.parentElement.clientWidth;
-    track.style.transform = 'translateX(-' + (currentPage * pageWidth) + 'px)';
-    prevBtn.disabled = currentPage === 0;
-    nextBtn.disabled = currentPage === totalPages - 1;
-    renderDots();
-  }
-  prevBtn.addEventListener('click', function () { if (currentPage > 0) { currentPage--; updateSlider(); } });
-  nextBtn.addEventListener('click', function () { if (currentPage < totalPages - 1) { currentPage++; updateSlider(); } });
-  dotsWrap.addEventListener('click', function (event) {
-    if (event.target.classList.contains('slider-dot')) {
-      currentPage = Number(event.target.dataset.index);
-      updateSlider();
-    }
-  });
-  window.addEventListener('resize', updateSlider);
-  updateSlider();
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  updateCartBadge();
-  bindAddToCartButtons(document);
-  initSlider();
-  handleRoute();
-
-
-  document.querySelectorAll('[data-route]').forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      var route = el.getAttribute('data-route');
-      if (!route) return;
-      var cat = el.getAttribute('data-category-link');
-      if (cat) activeCategory = cat;
-      if (el.tagName === 'A') e.preventDefault();
-      location.hash = route;
-      if (route === 'products') {
-        document.querySelectorAll('.category-tab').forEach(function (t) {
-          t.classList.toggle('active', t.getAttribute('data-category') === activeCategory);
-        });
-        renderProductsPage();
-      }
-    });
-  });
-
-
-  window.addEventListener('hashchange', handleRoute);
-
-
-  document.querySelectorAll('.category-tab').forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      activeCategory = tab.getAttribute('data-category');
-      document.querySelectorAll('.category-tab').forEach(function (t) { t.classList.toggle('active', t === tab); });
-      renderProductsPage();
-    });
-  });
-
-
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you! We will get back to you soon.');
-      contactForm.reset();
-    });
-  }
-
-
-  document.getElementById('go-checkout-btn').addEventListener('click', function () {
-    if (!getCart().length) { alert('Your cart is empty.'); return; }
-    location.hash = 'checkout';
-  });
-
-
-  var form = document.getElementById('checkout-form');
-  if (form) {
-    form.addEventListener('input', renderCheckoutReview);
-    document.getElementById('place-order-btn').addEventListener('click', function () {
-      if (!validateCheckoutForm(form)) return;
-      if (!getCart().length) { alert('Your cart is empty.'); return; }
-      var d = getFormData(form);
-      openConfirmModal('<p><strong>Total:</strong> ' + formatPrice(getCartSubtotal()) + '</p><p><strong>Deliver to:</strong> ' + d.fullName + ', ' + d.city + '</p><p><strong>Payment:</strong> Cash on Delivery</p>');
-    });
-  }
-
-
-  document.getElementById('confirm-order-btn').addEventListener('click', function () {
-    closeConfirmModal();
-    var form = document.getElementById('checkout-form');
-    var order = { id: 'GLO-' + Date.now().toString().slice(-8), createdAt: new Date().toISOString(), items: getCart(), shipping: getFormData(form), paymentMethod: 'Cash on Delivery', total: getCartSubtotal() };
-    var orders = []; try { orders = JSON.parse(localStorage.getItem(ORDERS_KEY) || '[]'); } catch (e) {}
-    orders.push(order); localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
-    lastOrder = order; saveCart([]); updateCartBadge(); form.reset(); renderOrderSuccess(order); location.hash = 'order-success';
-  });
-
-
-  document.getElementById('cancel-order-btn').addEventListener('click', closeConfirmModal);
-  document.getElementById('confirm-modal').addEventListener('click', function (e) { if (e.target.id === 'confirm-modal') closeConfirmModal(); });
-  document.getElementById('continue-shopping-btn').addEventListener('click', function () { location.hash = 'products'; });
-});
-})();
-</script>
-
-
-
 </body>
 </html>
-
