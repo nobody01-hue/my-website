@@ -145,16 +145,15 @@ padding: 10px 0;
 }
 .hero-banner {
 width: 100%;
-height: clamp(220px, 78vh, 850px);
+height: 78vh;
+min-height: 560px;
 overflow: hidden;
-position: relative;
 }
 .hero-banner img {
 width: 100%;
-height: 100%;
+height: auto;
 display: block;
 object-fit: cover;
-object-position: center;
 }
 .why-glowzy {
 max-width: 1150px;
@@ -824,7 +823,8 @@ grid-template-columns: 1fr;
 <div class="header-main">
 <a href="#home" class="brand-link" data-route="home" title="Glowzy — Home">
 <img src="/my-website/logo.jpg" alt="logo.jpg" class="brand-logo">
-<h1 class="brand-title">Glowzy</h1>
+<h1 class="brand-title">Glowzy</h1>  
+</div>
 </a>
 <nav class="main-nav" aria-label="Main Navigation">
 <a href="#about" data-route="about">About Us</a>
@@ -834,7 +834,6 @@ grid-template-columns: 1fr;
 <div class="header-actions">
 <a class="cart-link" href="#cart" data-route="cart" aria-label="Shopping cart">&#128722;<span class="cart-count" id="cart-count">0</span></a>
 <a class="shop-now-btn" href="#products" data-route="products">Shop Now</a>
-</div>
 </div>
 </header>
 
